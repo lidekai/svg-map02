@@ -1,0 +1,70 @@
+body{
+	background-color: #ffffff;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+/**
+ * 省份
+ */
+.province-GD{
+	fill-opacity:0.2;
+	fill:transparent;
+	stroke:#333;
+	fill-rule:evenodd;
+	stroke-linecap:round;
+	stroke-linejoin:round; 
+}
+/**
+ * 市
+ */
+.colorChange{
+	fill-opacity:0.2;
+	fill:transparent;
+	stroke-dasharray:1,6;
+	stroke:#999;
+	fill-rule:evenodd;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+}
+/**
+ * 缩放按钮
+ */
+#zoom-btn{
+	float: right;
+	margin-top: 1%;
+	margin-left: 2%
+}
+#map-GDS{
+	margin-right: 3.5%;
+}
+/**
+ * 提示
+ */
+.map-tip
+{
+  width:100px;
+  height:80px;
+  border:1px solid #232424;
+  position:relative;
+  float: left;
+  background-color: #232424;
+  color: #a6a29d;
+  display: none;
+  opacity:1;
+}
+.sp1
+{
+  bottom:-7.5px;
+  left:40px;
+  border-top:6px solid #232424;
+  border-right:6px solid white;
+  border-left:6px solid white;
+  position:absolute;
+}
+.textTip{
+	margin-left: 5px;
+}
+.testCity{
+	color:#00d0cb;
+	margin-left: 5px;
+}
