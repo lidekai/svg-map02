@@ -6,65 +6,83 @@ body{
 /**
  * 省份
  */
-.province-GD{
+.province-GD,.county{
 	fill-opacity:0.2;
 	fill:transparent;
 	stroke:#333;
 	fill-rule:evenodd;
 	stroke-linecap:round;
-	stroke-linejoin:round; 
+	stroke-linejoin:round;
 }
 /**
- * 市
+ * 市与区
  */
 .colorChange{
-	fill-opacity:0.2;
-	fill:transparent;
-	stroke-dasharray:1,6;
+	fill-opacity:1;
 	stroke:#999;
 	fill-rule:evenodd;
 	stroke-linecap:round;
 	stroke-linejoin:round;
 }
 /**
+ * 返回按钮
+ */
+#back-btn{
+	position:fixed;
+	z-index: 90;
+	margin-top: 1%;
+	margin-left: 5%;
+	display:none;
+
+}
+/**
  * 缩放按钮
  */
 #zoom-btn{
-	float: right;
-	margin-top: 1%;
-	margin-left: 2%
+	position:fixed;
+	z-index: 90;
+	margin-top: 38%;
+	margin-left: 5%;
 }
-#map-GDS{
-	margin-right: 3.5%;
+/**
+ * 颜色数字标尺
+ */
+.colorNumber{
+	width:10px;
+	height: 200px;
+	position:fixed;
+  	z-index: 90;
+	background: linear-gradient(to bottom, rgba(15, 85, 71, 0), rgb(15, 85, 71));
+	line-height:78px;
+	padding-left: 10px;
+}
+.colorNum{
+	position:fixed;
+  	z-index: 90;
+	margin-left: 95%;
+	margin-top: 10%;
 }
 /**
  * 提示
  */
-.map-tip
+#map-tip
 {
+  position:fixed;
+  z-index: 90;
   width:100px;
   height:80px;
-  border:1px solid #232424;
-  position:relative;
-  float: left;
   background-color: #232424;
   color: #a6a29d;
-  display: none;
-  opacity:1;
-}
-.sp1
-{
-  bottom:-7.5px;
-  left:40px;
-  border-top:6px solid #232424;
-  border-right:6px solid white;
-  border-left:6px solid white;
-  position:absolute;
+  display:none;
 }
 .textTip{
-	margin-left: 5px;
+	margin-left: 15px;
 }
-.testCity{
+.testCity,.testNumber{
 	color:#00d0cb;
 	margin-left: 5px;
+}
+#map-GDS{
+	padding-top: 10%;
+	padding-left: 10%;
 }

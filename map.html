@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>map</title>
@@ -13,23 +11,33 @@
     <link href="css/map.css" rel="stylesheet" >
 </head>
 <body>
+    <!--================================返回按钮============================================-->
+    <div id="back-btn">
+        <button class="btn btn-warning dim back" type="button"><i class="fa fa-caret-left"></i></button>
+    </div>
     <!--================================缩放按钮=============================================-->
     <div id="zoom-btn">
         <button class="btn btn-primary dim zoomBig" type="button"><i class="fa fa-plus"></i></button><br>
         <button class="btn btn-primary dim zoomSmall" type="button"><i class="fa fa-minus"></i></button>
     </div>
     <!--================================提示=============================================-->
-    <div class="map-tip">
-        <span class="sp1"></span>
+    <div id="map-tip">
         <div class="textTip"><br>
-            <span>city:<span class="testCity"></span></span><br>
-            <span>number:<span class="testNumber"></span></span>
+            <span>城市:<span class="testCity"></span></span><br>
+            <span>数量:<span class="testNumber"></span></span>
         </div>
-
+    </div>
+    <!--================================颜色数字标尺=============================================-->
+    <div class="colorNum">
+        <span class="num0">0</span>
+        <div class="colorNumber">
+            <span class="num5"><i class="fa fa-caret-right">5</i></span>
+            <span class="num15"><i class="fa fa-caret-right">15</i></span>
+            <span class="num20"><i class="fa fa-caret-right">20</i></span>
+        </div>
     </div>
 	<!--================================地图=============================================-->
     <div id="map-GDS"></div>
-
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/map-data.js"></script>
     <script src="js/map-service.js"></script>
